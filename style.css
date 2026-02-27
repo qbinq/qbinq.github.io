@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color:#F0F3F5;
 }
 .banner {
@@ -21,7 +21,9 @@ body {
 .footer {
     text-align: center;
     /* padding: 2rem; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.21)
 }
 .page {
     flex: 1;
@@ -31,15 +33,17 @@ body {
     margin: 0 auto;
     padding: 2rem;
     gap: 2rem;
+    /* border: 2px solid black; */
 
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: 330px;
-    border: 2px solid black;
-    /* padding: 2rem; */
+    width: 360px;
+    /* border: 2px solid black; */
+    font-size: 1.05rem;
+    /* padding: 0rem; */
 }
 
 .photo {
@@ -52,9 +56,71 @@ body {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     flex: 1;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 50vw;
-    min-width: 330px;
+    min-width: 360px;
+    font-family: 'Source Sans 3',sans-serif;
     /* padding: 2rem; */
 }
+
+.name {
+    font-family: "IBM Plex Mono" , monospace;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;;
+}
+
+.socials a{
+    font-family: 'Source Sans 3',sans-serif;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.72);
+    text-decoration: none;
+    margin-right: 0.3rem;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+.intro{
+    /* font-size: 1.05rem; */
+    font-weight: normal;
+}
+
+nav{
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+.post-title{
+    margin-bottom: 0.25rem;
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.post-meta{
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 0.9rem;
+    /* color: #666; */
+}
+.post-divider{
+    border: none;
+    margin: 0.3rem 0;
+    height: 2px;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); */
+
+    background-color: rgba(0, 0, 0, 0.6);
+    /* width: 50%; */
+}
+.post-description{
+    margin-top:0.5rem;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
