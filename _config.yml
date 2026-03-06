@@ -1,0 +1,7 @@
+title: My Site
+markdown: kramdown
+permalink: pretty
+collections: 
+  my_collection:
+    output: true
+    permalink: /:collection/:name

@@ -94,7 +94,10 @@ nav{
     font-weight: 500;
     line-height: 1.7em;
 }
-
+.post a{
+    text-decoration: none;
+    color: black;
+}
 .post-title{
     margin-bottom: 0.25rem;
     font-family: 'inter', sans-serif;

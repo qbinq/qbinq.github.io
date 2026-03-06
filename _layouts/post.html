@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="\style.css"
+        <title>{{page.title}}</title>
+    </head>
+<body>
+
+    <main class="content">
+        <article class="post">
+            <h2 class="post-title">{{page.title}}</h2>
+
+            <h6 class="post-meta">
+                {{page.date | date: "%d %b, %Y" }} - {{page.type}}
+            </h6>
+
+            <hr class = "post-divider">
+
+            <div class = "post-content">
+                {{content}}
+            </div>
+        </article>
+    </main>
+</body>
+</html>
