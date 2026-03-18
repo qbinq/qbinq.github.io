@@ -52,7 +52,7 @@ body {
     width: 140px;
     height: 149px;
     object-fit: cover;
-    object-position: 100% center;
+    /* object-position: 100% center; */
 }
 /* .name-button{
     text-decoration: none;
@@ -93,6 +93,42 @@ body {
 .socials a:hover {
     text-decoration: underline;
 }
+
+.hidden-mail{
+    display:none;
+    /* visibility: hidden; */
+    transform: translateX(-100%);
+    /* translate: 0 -25vh; */
+    opacity: 0;
+    /* animation: appear 5s; */
+
+    /* transition-behavior: allow-discrete; */
+    /* transition: display 0.5s, transform  0.5s ease-out, opacity 0.5s ease-out; */
+    transition-property: display opacity transfrom;
+    transition-duration: 0.3s;
+    transition-behavior: allow-discrete;
+}
+
+.mail-container{
+    overflow: hidden;
+    display: inline;
+    /* height: 0px;
+    width: 0px; */
+}
+
+.mail-container:hover .hidden-mail{
+    display:inline-block;
+    transform: translateX(0);
+    /* translate: 0 0; */
+    opacity: 1;
+    
+    @starting-style{
+        opacity:0;
+        transform: translateX(-100%);
+        /* translate: 0 -25vh; */
+    }
+}
+
 
 .intro{
     /* font-size: 1.05rem; */
