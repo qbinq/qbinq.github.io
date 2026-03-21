@@ -1,0 +1,22 @@
+---
+layout: default
+title: Thoughts
+permalink: /thoughts/
+---
+{% for post in site.posts %}
+{% if post.type == "Thought"%}
+<article class="post">
+    <a href="{{post.url}}">
+    <h2 class="post-title">{{post.title}} </h2>
+
+    <h6 class="post-meta">
+        {{post.date | date: "%d %b, %Y"}} - {{post.type}}
+    </h6>
+    <hr class = "post-divider">
+    <div class = "post-description">
+        {{post.excerpt}}
+    </div>
+</a>
+</article>
+{%endif%}
+{% endfor %}

@@ -1,6 +1,8 @@
 title: My Site
 markdown: kramdown
 permalink: pretty
+paginate: 3
+paginate_path: "/page:num"
 collections: 
   my_collection:
     output: true
