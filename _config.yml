@@ -1,9 +1,10 @@
 title: My Site
 markdown: kramdown
-permalink: pretty
+# permalink: pretty
 paginate: 3
 paginate_path: "/page:num"
-collections: 
-  my_collection:
-    output: true
-    permalink: /:collection/:name
+permalink: /:categories/:title:output_ext
+# collections: 
+#   my_collection:
+#     output: true
+#     permalink: /:categories/:output_ext

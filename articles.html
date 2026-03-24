@@ -1,16 +1,15 @@
 ---
 layout: default
-title: Articles
-permalink: /articles/
+title: Artículos
+permalink: /articulo/
 ---
-{% for post in site.posts %}
-{% if post.type == "Article"%}
+{% for post in site.categories.Articulo %}
 <article class="post">
     <a href="{{post.url}}">
     <h2 class="post-title">{{post.title}} </h2>
 
     <h6 class="post-meta">
-        {{post.date | date: "%d %b, %Y"}} - {{post.type}}
+        {{post.date | date: "%d %b, %Y"}} - {{post.categories}}
     </h6>
     <hr class = "post-divider">
     <div class = "post-description">
@@ -18,5 +17,4 @@ permalink: /articles/
     </div>
 </a>
 </article>
-{%endif%}
 {% endfor %}
