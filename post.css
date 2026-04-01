@@ -1,0 +1,104 @@
+@media (max-width: 800px){
+    .page {
+        flex-direction: column;
+        /* justify-content:center; */
+        align-items: center;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    font-family: 'Source Sans 3', sans-serif;
+    background-color:#F0F3F5;
+}
+
+.page{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: gray; */
+    flex: 1;
+    margin-top: 17vh;
+    margin: 17vh 10px 0 10px;
+    /* margin-right: clamp(10px,4vw,50px); */
+    /* margin-left: clamp(10px,4vw,50px) */
+}
+.sidebar{
+    /* align-self: center; */
+    position: relative;
+    top: 119px;
+    /* text-align: center; */
+    font-family: 'inter', sans-serif;
+    /* background-color: aquamarine; */
+    /* width : 254px; */
+    /* height: 281px; */
+    width: 17vw;
+    height: 27vh;
+}
+
+#ghost{
+    /* background-color: black; */
+    visibility: hidden;
+    /* display:none; */
+}
+
+.content{
+    /* width: 830px; */
+    max-width: 830px;
+    /* width: 46vw; */
+    /* background-color: aqua; */
+}
+.back-icon{
+    width: 20px;
+    position: relative;
+    top: 20px;
+    opacity: 0.5;
+}
+.back-icon:hover{
+    opacity:1;
+}
+.post-title{
+    font-family: 'inter', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* display: block; */
+    font-size: 1.6rem;
+}
+
+.post-title::after{
+    content: '';
+    display:block;
+    border-top: 2px solid black;
+}
+.post-meta{
+    margin-top: 4px;
+    margin-bottom: 40px;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.post-content{
+    font-size: 1.1rem;
+}
+/* .post-divider{
+    margin: 0;
+    /* width: 50%; */
+    /* display: inline-block;
+    width: auto;
+} */
+
+.footer {
+    text-align: center;
+    /* padding: 2rem; */
+    /* border: 2px solid black; */
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.21);
+    /* align-self: stretch; */
+    /* align-items: flex-end; */
+}
