@@ -14,7 +14,7 @@ layout: default
     </h6>
     <hr class = "post-divider">
     <div class = "post-description">
-        {{post.excerpt}}
+        {{post.excerpt | strip_html}}
     </div>
 </a>
 </article>

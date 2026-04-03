@@ -86,17 +86,15 @@ body {
 .post-content{
     font-size: 1.1rem;
 }
-/* .post-divider{
-    margin: 0;
-    /* width: 50%; */
-    /* display: inline-block;
-    width: auto;
-} */
+
+.post-content img{
+    width: 100%;
+    /* height: auto; */
+}
 
 .footer {
     text-align: center;
     /* padding: 2rem; */
-    /* border: 2px solid black; */
     font-weight: 500;
     color: rgba(0, 0, 0, 0.21);
     /* align-self: stretch; */
