@@ -1,9 +1,15 @@
 title: My Site
 markdown: kramdown
+kramdown: 
+  math_engine: katex
+
 # permalink: pretty
 paginate: 3
 paginate_path: "/page:num"
 permalink: /:categories/:title:output_ext
+plugins:
+  - jekyll-toc
+  - jekyll-paginate
 # collections: 
 #   my_collection:
 #     output: true
