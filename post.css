@@ -1,4 +1,4 @@
-@media (max-width: 800px){
+@media (max-width: 1195px){
     .page {
         flex-direction: column;
         /* justify-content:center; */
@@ -19,13 +19,39 @@ body {
     background-color:#F0F3F5;
 }
 
+.banner {
+    width: 100%;
+    justify-self: center;
+    margin:auto;
+    animation: fade-out linear both;
+    animation-timeline: scroll();
+    animation-range: exit 0% exit 4%;
+    -webkit-mask-image: linear-gradient(to top, transparent,40%, black);
+    mask-image: linear-gradient(to top, transparent,40%, black);
+}
+
+/* .banner{
+    background-image:
+     linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
+     url("assets/images/VelocidadEfectiva/portada\ \(1\).png");
+    background-size: cover;
+    animation: fade-out linear both;
+    animation-timeline: scroll();
+    animation-range: exit 0% exit 4%;
+
+} */
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 .page{
     display: flex;
     justify-content: space-between;
     /* background-color: gray; */
     flex: 1;
-    margin-top: 17vh;
-    margin: 17vh 10px 0 10px;
+    margin: 0 10px;
     /* margin-right: clamp(10px,4vw,50px); */
     /* margin-left: clamp(10px,4vw,50px) */
 }
@@ -56,8 +82,33 @@ body {
 }
 
 .section-nav a{
-    color:black;
+    color:rgba(0, 0, 0, 0.801);
     text-decoration: none;
+}
+
+.section-nav li{
+    list-style-type: none;
+}
+
+.section-nav li a:hover{
+    font-size: 1.05rem;
+}
+
+.section-nav .sub-list{
+    /* display: none; */
+    padding-left: 20px;    
+}
+
+
+#toc a.active {
+  color: black;
+  font-weight: bold;
+  font-size:1.05rem;
+  list-style-type: disc;
+}
+
+.section-nav >li:has(.active){
+    list-style-type: '\276F';
 }
 
 .content{
@@ -84,9 +135,12 @@ body {
 }
 
 .post-title::after{
-    content: '';
-    display:block;
-    border-top: 2px solid black;
+    content: url("assets/posttitleunderline.svg"); 
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+    margin-bottom: -5px;
 }
 .post-meta{
     margin-top: 4px;
@@ -97,11 +151,110 @@ body {
 
 .post-content{
     font-size: 1.1rem;
+    line-height: 1.5;
+}
+.post-content a{
+    color:rgb(6,125,233)
 }
 
+/* .post-content h2{
+    position:relative;
+    display:inline-block;
+
+} */
+
+.post-content h2::after{
+    content: '';
+    display:block;
+    border-top: 2px solid black;
+}
+
+.post-content h3{
+    padding-left: 20px;
+
+}
+
+
+.post-content .gallery{
+    display: flex;
+}
 .post-content img{
     width: 100%;
     /* height: auto; */
+}
+
+/* image slider styling */
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider button{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size:1.1rem
+}
+
+.slider-left-button{
+    left: 0;
+}
+
+.slider-right-button{
+    right: 0;
+}
+
+.slider img{
+    width: 80%;
+    display: none;
+    margin: auto;
+}
+
+.slides .displaySlide{
+    display: block;
+}
+
+
+/* ***** */
+
+.post-content table{
+    margin: 0px auto;
+    /* border-spacing: 0; */
+    /* border: 10px solid transparent; */
+    /* border-image: url("/assets/nav_underline.svg") 30 stretch; */
+    /* border-collapse: separate; */
+    /* border-bottom: 10px solid transparent;
+    border-image: url("/assets/nav_underline.svg") 30 stretch;
+    border */
+}
+
+
+
+.post-content table, tr, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+
+/* .post-content tr:nth-child(even) {
+  background-color: #292a2b1f;
+}
+
+.post-content th:nth-child(even),td:nth-child(even) {
+  background-color: #292a2b1f;
+} */
+
+.post-content blockquote{
+    background-color: #292a2b1f;
+    border-left: 3px solid rgb(6,125,233);
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
 }
 
 .footer {
@@ -112,3 +265,4 @@ body {
     /* align-self: stretch; */
     /* align-items: flex-end; */
 }
+

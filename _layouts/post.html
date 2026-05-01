@@ -19,9 +19,17 @@
                 renderMathInElement(document.body);
             });
         </script> -->
+
+        <script src = "/scripts/imageSlider.js"></script>
     </head>
 <body>
 
+    {%if page.banner%}
+    {%assign pathSize = page.banner.size| minus: 5%}
+    <img class = "banner" src="{{page.banner |slice:4,pathSize}}">
+    {%else%}
+    <div style="height: 17vh;"></div>
+    {%endif%}
     <div class = "page">
         <aside class = "sidebar" id = "table-of-contents">
             {% toc %}
@@ -40,7 +48,7 @@
 
             <center>
             <h6 class="post-meta">
-                {{page.date | date: "%d %b, %Y" }} - {{page.categories}}
+                {{page.date | date: "%d %b, %Y" }} &middot {{page.categories}}
             </h6>
             </center>
             <div class = "post-content">
@@ -51,5 +59,10 @@
     </div>
 
     <footer class = "footer">© Todos los derechos reservados</footer>
+
+
+    {%if page.toc==true%}
+    <script src = "/scripts/scroll_spy.js"> </script>
+    {%endif%}
 </body>
 </html>
