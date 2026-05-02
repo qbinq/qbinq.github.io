@@ -5,7 +5,9 @@ categories: Articulo
 toc: true
 banner: "![](/assets/images/VelocidadEfectiva/portada.png)"
 ---
-Este artículo refiere a parte de la investigación que realicé al final de mi Pregrado en Física en la UdeA. Es básicamente una versión escrita de la exposición que hice como parte del requisito de Graduación. Por lo tanto, no hay mucho esfuerzo en explicar conceptos matemáticos y físicos que puede que muchos no entiendan. Se asume que se entiende algo de cálculo, ecuaciones diferenciales y relatividad. Entiendo que esto puede ser una asunción grande, pero el objetivo era más plasmar este contenido en cualquier lado del internet (más sobre esto en el siguiente párrafo) y no tanto dar una clase. Perdonen aún así mi ajenidad.
+Este artículo refiere a parte de la investigación que realicé al final de mi Pregrado en Física en la UdeA. Es básicamente una versión escrita de la exposición que hice como parte del requisito de Graduación.
+
+Por lo tanto, no hay mucho esfuerzo en explicar conceptos matemáticos y físicos que puede que muchos no entiendan. Se asume que se entiende algo de cálculo, ecuaciones diferenciales y relatividad. Entiendo que esto puede ser una asunción grande, pero el objetivo era más plasmar este contenido en cualquier lado del internet (más sobre esto en el siguiente párrafo) y no tanto dar una clase. Perdonen aún así mi ajenidad.
 
 La razón de compartir esto es porque siempre he sido un defensor de tener más transparencia en la academia, sobre todo dentro las universidades publicas. Mi filosofía al respecto tal vez la discuta más a detalle en otro lado más apropiado, pero básicamente lo que creo es que los científicos deberían ser más abiertos a compartir y hablar en línea sobre sus proyectos y que debería haber una forma sencilla y directa para el publico de saber en qué tipo de cosas los recursos de investigación están siendo destinados. Este trabajo está lejos de caer dentro de esa categoría (fue básicamente tarea lol), pero igualmente lo comparto para coger hábito y dar ejemplo.
 
