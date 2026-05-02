@@ -25,7 +25,7 @@ body {
     margin:auto;
     animation: fade-out linear both;
     animation-timeline: scroll();
-    animation-range: exit 0% exit 4%;
+    animation-range: exit 0% exit 3%;
     -webkit-mask-image: linear-gradient(to top, transparent,40%, black);
     mask-image: linear-gradient(to top, transparent,40%, black);
 }
@@ -249,7 +249,7 @@ body {
 } */
 
 .post-content blockquote{
-    background-color: #292a2b1f;
+    background-color: rgb(224, 224, 224);
     border-left: 3px solid rgb(6,125,233);
     padding-top: 5px;
     padding-right: 10px;
@@ -258,11 +258,64 @@ body {
 }
 
 .footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     /* padding: 2rem; */
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.21);
+    margin: 200px 0 0;
+    /* font-weight: 500; */
+    /* color: #F0F3F5; */
+    color: rgb(224, 224, 224);
+    background-color: #36454F;
+    /* box-shadow: 0px -1px 100px  black; */
+    /* background: linear-gradient(45deg,black,5%,#36454F); */
+    /* border-top: 2px solid black; */
     /* align-self: stretch; */
     /* align-items: flex-end; */
 }
 
+.footer svg{
+    cursor:pointer;
+}
+#githubLogo path{
+    fill:#F0F3F5;
+}
+.footer-columns{
+    width: 830px;
+    display:flex;
+    justify-content: space-between;
+    /* gap: 100px */
+}
+
+.footer-left-column{
+    text-align: left;
+    
+}
+
+.footer-right-column{
+    text-align: right;
+    /* font-size: 0.9rem; */
+    font-weight: 600;
+}
+
+.footer-right-column a{
+    color:inherit;
+    text-decoration: none;
+    position:relative;
+}
+
+.footer-right-column a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color:rgb(224, 224, 224);
+  transition: width 0.3s ease
+}
+
+.footer-right-column a:hover::after {
+  width: 100%;
+}
