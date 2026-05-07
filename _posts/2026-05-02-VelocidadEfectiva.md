@@ -192,7 +192,7 @@ $$
 
 Aunque no estoy escribiendo explícitamente las dependencias de $$c_{e}$$, recordemos que esta en general es una función muy complicada del espacio y el tiempo. No hemos explorado esto qué podría significar para otras cantidades geométricas como el escalar de curvatura obtenidas a partir de esta métrica inusual. Por ahora, esta es toda la geometría que consideraremos.
 
-Con un Lagrangiano, una métrica y una acción, se puede definir un tensor de energía-momento. Este nos permite tener una discusión sobre las condiciones de energía
+Con un Lagrangiano, una métrica y una acción, se puede definir un tensor de energía-momento. Este nos permite tener una discusión sobre las condiciones de energía.
 
 ## Condiciones de energía
 
@@ -391,9 +391,9 @@ Con estas redefiniciones repetimos el cálculo de las condiciones de energía, e
 
 ## Conclusión
 
-Se tomó un campo escalar dado por un paquete Gaussiano que modela fenomenológicamente una señal $$X$$. Referente a las condiciones de energía encontramos que se violan si este campo no viaja a la velocidad de la luz $$c$$.
+Se tomó un campo escalar dado por un paquete Gaussiano que modela fenomenológicamente una señal $$X$$. Referente a las condiciones de energía encontramos que se violan si este campo no viaja a la velocidad de la luz $$c$$&nbsp;.
 
-Pero al pasar al marco efectivo, que en teoría describe el mismo sistema, encontramos que no hay restricción alguna sobre los valores de la velocidad $$c_{2}$$.
+Pero al pasar al marco efectivo, que en teoría describe el mismo sistema, encontramos que no hay restricción alguna sobre los valores de la velocidad $$c_{2}$$
 
 Esto puede ser ya sea un comentario sobre la fisicidad del marco efectivo o un comentario más sobre la fundamentalidad de las condiciones de energía. Mi opinión personal es que es más lo primero debido a que la métrica efectiva es una cantidad definida para cada señal y sólo aplicable en el contexto de esta. Por lo tanto, no puede usarse como una métrica del espacio-tiempo y obtener conclusiones sobre las condiciones de energía.
 
