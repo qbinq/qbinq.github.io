@@ -11,7 +11,7 @@ Por lo tanto, no hay mucho esfuerzo en explicar conceptos matemáticos y físico
 
 La razón de compartir esto es porque siempre he sido un defensor de tener más transparencia en la academia, sobre todo dentro las universidades publicas. Mi filosofía al respecto tal vez la discuta más a detalle en otro lado más apropiado, pero básicamente lo que creo es que los científicos deberían ser más abiertos a compartir y hablar en línea sobre sus proyectos y que debería haber una forma sencilla y directa para el publico de saber en qué tipo de cosas los recursos de investigación están siendo destinados. Este trabajo está lejos de caer dentro de esa categoría (fue básicamente tarea lol), pero igualmente lo comparto para coger hábito y dar ejemplo.
 
-Mi trabajo fue asesorado por el professor Antonio Enea Romano y en realidad consistió de una variedad de tópicos, el de velocidad efectiva es simplemente el que elegimos mostrar ese día. El preprint que salió de esto puede ser encontrado en [arXiv.2602.22023](https://doi.org/10.48550/arXiv.2602.22023), una versión del mismo escrito más personal se encuentra en [energy-effective-gaussian](https://restrepokevin-2026-energy-effective-gaussian.tiiny.site).
+Mi trabajo fue asesorado por el professor Antonio Enea Romano y en realidad consistió de una variedad de tópicos, el de velocidad efectiva es simplemente el que elegimos mostrar ese día. El preprint que salió de esto puede ser encontrado en [arXiv.2602.22023](https://doi.org/10.48550/arXiv.2602.22023), una versión del mismo escrito más personal se encuentra en [energy-effective-gaussian](https://hdl.handle.net/10495/50940).
 
 ## Introducción
 
@@ -391,9 +391,9 @@ Con estas redefiniciones repetimos el cálculo de las condiciones de energía, e
 
 ## Conclusión
 
-Se tomó un campo escalar dado por un paquete Gaussiano que modela fenomenológicamente una señal $$X$$. Referente a las condiciones de energía encontramos que se violan si este campo no viaja a la velocidad de la luz $$c$$&nbsp;.
+Se tomó un campo escalar dado por un paquete Gaussiano que modela fenomenológicamente una señal $$X$$. Referente a las condiciones de energía encontramos que se violan si este campo no viaja a la velocidad de la luz $$c$$.
 
-Pero al pasar al marco efectivo, que en teoría describe el mismo sistema, encontramos que no hay restricción alguna sobre los valores de la velocidad $$c_{2}$$
+Pero al pasar al marco efectivo, que en teoría describe el mismo sistema, encontramos que no hay restricción alguna sobre los valores de la velocidad $$c_{2}$$.
 
 Esto puede ser ya sea un comentario sobre la fisicidad del marco efectivo o un comentario más sobre la fundamentalidad de las condiciones de energía. Mi opinión personal es que es más lo primero debido a que la métrica efectiva es una cantidad definida para cada señal y sólo aplicable en el contexto de esta. Por lo tanto, no puede usarse como una métrica del espacio-tiempo y obtener conclusiones sobre las condiciones de energía.
 
