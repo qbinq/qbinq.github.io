@@ -8,7 +8,11 @@ paginate: 3
 toc:
   sublist_class: sub-list
 paginate_path: "/page:num"
-permalink: /:categories/:title:output_ext
+collections:
+  posts_en:
+    output: true
+    permalink: /en/:categories/:title
+permalink: /:categories/:title
 plugins:
   - jekyll-toc
   - jekyll-paginate

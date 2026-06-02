@@ -1,0 +1,51 @@
+es:
+  home_url: /
+  nav:
+    contact:
+      url: /contacto
+      text: Contacto
+    articles:
+      url: /articulo
+      text: Articulos
+    tutorials:
+      url: /tutorial
+      text: Tutoriales
+    blog:
+      url: /blog
+      text: Blog
+  intro: Físico de la Universidad de Antioquia.<br>
+                Interesado en Ciencia, Tecnología y Software.<br>
+                Hacedor de cosas.
+  post_nav:
+    prev: Post anterior
+    next: Post siguiente
+  post_footer: Post escrito por Kevin Restrepo,<br>actualmente experimentando los efectos del desempleo.<br>
+        Físico interesado en Ciencia y Tecnología.<br>
+        Hacedor de cosas.
+  copy: © 2026 Todos los derechos reservados.
+
+en:
+  home_url: /en/
+  nav:
+    contact:
+      url: /en/contact
+      text: Contact
+    articles:
+      url: /en/articles
+      text: Articles
+    tutorials:
+      url: /en/tutorials
+      text: Tutorials
+    blog:
+      url: /en/blog
+      text: Blog
+  intro: Physicist from the UdeA.<br>
+                Interested in Science, Technology and Software.<br>
+                Doer of things.
+  post_nav:
+    prev: Previous Post
+    next: Next Post
+  post_footer: Post written by Kevin Restrepo, <br>currently experimenting with the effects of unemployment.<br>
+        Physicist interested in Science and Techonology.<br>
+        Doer of things.
+  copy: © 2026 All rights reserved.

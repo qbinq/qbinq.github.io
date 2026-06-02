@@ -34,7 +34,7 @@
     {%endif%}
 
     
-    <a href="/">
+    <a href="{{site.data.translations[page.lang].home_url}}">
     <svg class = "back-icon" width="62" height="113" viewBox="0 0 62 113" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="back-icon-banner">
     <g id="banner">
@@ -77,12 +77,12 @@
             </div>
         <div class = "post-nav">
             {%if page.previous%}
-            <a href="{{page.previous | relative_url}}">&#x276E Post anterior</a>
+            <a href="{{page.previous | relative_url}}">&#x276E {{site.data.translations[page.lang].post_nav.prev}}</a>
             {%else%}
             <span style="visibility: hidden;">prev post</span>
             {%endif%}
             {%if page.next%}
-            <a href = "{{page.next | relative_url}}">Post siguiente &#x276F</a>
+            <a href = "{{page.next | relative_url}}">{{site.data.translations[page.lang].post_nav.next}} &#x276F</a>
             {%else%}
             <span style="visibility: hidden;">next post</span>
             {%endif%}
@@ -94,16 +94,14 @@
     <footer class = "footer">
        <div class = "footer-columns">
         <div class = "footer-left-column">
-        <p>Post escrito por Kevin Restrepo,<br>actualmente experimentando los efectos del desempleo.<br>
-        Físico interesado en Ciencia y Tecnología.<br>
-        Hacedor de cosas.</p>
+        <p>{{site.data.translations[page.lang].post_footer}}</p>
         </div>
         <div class = "footer-right-column">
             <p>
-            <a href= "/articulo/"">Artículos</a><br>
-            <a href = "/tutorial/">Tutoriales</a><br>
-            <a href = "/blog/">Blog</a><br>
-            <a href= "/contacto">Contacto</a><br>
+            <a href= "{{site.data.translations[page.lang].nav.articles.url}}">{{site.data.translations[page.lang].nav.articles.text}}</a><br>
+            <a href = "{{site.data.translations[page.lang].nav.tutorials.url}}">{{site.data.translations[page.lang].nav.tutorials.text}}</a><br>
+            <a href = "{{site.data.translations[page.lang].nav.blog.url}}">{{site.data.translations[page.lang].nav.blog.text}}</a><br>
+            <a href= "{{site.data.translations[page.lang].nav.contact.url}}">{{site.data.translations[page.lang].nav.contact.text}}</a><br>
             </p>
             <!-- <svg width="98" height="96" viewBox="0 0 98 96" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id ="githubLogo" clip-path="url(#clip0_730_27136)">
@@ -117,7 +115,7 @@
             </svg> -->
         </div>
        </div>       
-        © Todos los derechos reservados
+       {{site.data.translations[page.lang].copy}}
     </footer>
 
 

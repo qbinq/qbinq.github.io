@@ -26,10 +26,10 @@
                 <img src = "/images/landingpic.jpg" class="photo">
                 <!-- </div> -->
                 <h1 class = "name">
-                <a href="/">
+                <a href="{{site.data.translations[page.lang].home_url}}">
                     Kevin Restrepo
                 </a>
-                <svg id = "under-line" class =  "{%if  page.url != '/'%}inactive{%endif%}" width="170" height="5" viewBox="0 0 170 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id = "under-line" class =  "{%if  page.url != site.data.translations[page.lang].home_url%}inactive{%endif%}" width="170" height="5" viewBox="0 0 170 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                 <clipPath id = "mask">
                 <rect x="0" y="0" width="200" height="5"/>
@@ -55,21 +55,19 @@
                     </div>
                 </div>
                 </center>
-                <p class = "intro">Físico de la Universidad de Antioquia.<br>
-                Interesado en Ciencia, Ingeniería y Software.<br>
-                Hacedor de cosas.</p>
+                <p class = "intro">{{ site.data.translations[page.lang].intro }}</p>
                 <nav>
                     <div>
-                    <a href = "/articulo/" class = "{%if page.title == 'Artículos' %} active {% endif %}">Artículos</a> <br>
+                    <a href = "{{site.data.translations[page.lang].nav.articles.url}}" class = "{%if page.nav == 'article' %} active {% endif %}">{{site.data.translations[page.lang].nav.articles.text}}</a> <br>
                     </div>
                     <div>
-                    <a href = "/tutorial/" class = "{%if page.title == 'Tutorial' %} active {% endif %}">Tutoriales</a> <br>
+                    <a href = "{{site.data.translations[page.lang].nav.tutorials.url}}" class = "{%if page.nav == 'tutorial' %} active {% endif %}">{{site.data.translations[page.lang].nav.tutorials.text}}</a> <br>
                     </div>
                     <div class ="test-container">
-                    <a href = "/blog/" class = "{%if page.title == 'Blog' %} active {% endif %}">Blog</a><br>
+                    <a href = "{{site.data.translations[page.lang].nav.blog.url}}" class = "{%if page.nav == 'blog' %} active {% endif %}">{{site.data.translations[page.lang].nav.blog.text}}</a><br>
                     </div>
                     <div>
-                    <a href= "/contacto" class = "{%if page.title == 'Contacto' %} active {% endif %}"> Contacto</a><br>
+                    <a href= "{{site.data.translations[page.lang].nav.contact.url}}" class = "{%if page.nav == 'contact' %} active {% endif %}"> {{site.data.translations[page.lang].nav.contact.text}}</a><br>
                     </div>
                 </nav>
             </aside>
@@ -78,7 +76,7 @@
            </main>
         </div>
 
-        <footer class = "footer">© Todos los derechos reservados</footer>
+        <footer class = "footer">{{site.data.translations[page.lang].copy}}</footer>
         <script src = "/scripts/copyToClipboard.js"></script>
     </body>
 

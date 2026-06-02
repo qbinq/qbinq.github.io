@@ -1,6 +1,7 @@
 ---
 title: "Hola mundo"
 layout: post
+lang: es
 categories: Blog
 ---
 Este es el primer post de verdad.

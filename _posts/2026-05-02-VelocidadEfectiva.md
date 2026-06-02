@@ -2,6 +2,7 @@
 title: "Velocidad efectiva y condiciones de energía"
 layout: post
 categories: Articulo
+lang: es
 toc: true
 banner: "![](/assets/images/VelocidadEfectiva/portada.png)"
 ---

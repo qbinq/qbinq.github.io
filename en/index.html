@@ -1,8 +1,10 @@
 ---
 layout: default
-lang: es
+lang: en
 ---
-{% for post in paginator.posts %}
+{% assign posts = site.posts_en | sort: "date" | reverse %}
+
+{% for post in posts %}
 <article class="post">
     <a href="{{post.url}}">
     <h2 class="post-title">{{post.title}} </h2>
