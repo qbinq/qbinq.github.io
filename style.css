@@ -170,10 +170,23 @@ a.copy-to-clipboard:hover{
         /* translate: 0 -25vh; */
     }
 }
+.socials{
+    position: relative;
+}
+
+.translation-icon{
+    /* padding: 0.5rem; */
+    padding: .3rem 0;
+    height: 1.2rem;
+    display:inline-block;
+}
+
+
 
 
 .intro {
     /* font-size: 1.05rem; */
+    margin-top:0;
     font-weight: normal;
 }
 

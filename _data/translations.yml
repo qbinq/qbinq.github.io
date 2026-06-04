@@ -1,6 +1,8 @@
 es:
-  home_url: /
+  icon_url: /assets/myenicon.svg 
   nav:
+    home:
+      url: /
     contact:
       url: /contacto
       text: Contacto
@@ -25,8 +27,10 @@ es:
   copy: © 2026 Todos los derechos reservados.
 
 en:
-  home_url: /en/
+  icon_url: /assets/myesicon.svg 
   nav:
+    home:
+      url: /en/
     contact:
       url: /en/contact
       text: Contact
