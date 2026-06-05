@@ -70,6 +70,14 @@
             <center>
             <h6 class="post-meta">
                 {{page.date | date: "%d %b, %Y" }} &middot {{page.categories}}
+                {%if page.lang == "en"%}
+                {% assign translated = site.posts | where: "translation_key", page.translation_key | first %}
+                {%else%}
+                {% assign translated = site.posts_en | where: "translation_key", page.translation_key | first %}
+                {%endif%}
+                <a href="{{translated.url}}">
+                <img src = "{{site.data.translations[page.lang].icon_url}}" class="translation-icon">
+                </a>
             </h6>
             </center>
             <div class = "post-content">
@@ -95,6 +103,11 @@
        <div class = "footer-columns">
         <div class = "footer-left-column">
         <p>{{site.data.translations[page.lang].post_footer}}</p>
+        {%if page.lang =="en"%}
+        Este post está disponible en <a href = "{{translated.url}}">Español!</a>
+        {%else%}
+        This post is availabe in <a href = "{{translated.url}}">English!</a>
+        {%endif%}
         </div>
         <div class = "footer-right-column">
             <p>

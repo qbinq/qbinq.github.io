@@ -2,10 +2,11 @@
 layout: default
 nav: home
 lang: en
+pagination:
+  enabled: true
+  collection: posts_en
 ---
-{% assign posts = site.posts_en | sort: "date" | reverse %}
-
-{% for post in posts %}
+{% for post in paginator.posts %}
 <article class="post">
     <a href="{{post.url}}">
     <h2 class="post-title">{{post.title}} </h2>
@@ -50,13 +51,14 @@ lang: en
     </svg>
   {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em class = "current-page">{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ site.paginate_path | relative_url | replace: 'page:num/', '' }}">{{ page }}</a>
+  {{paginator.paginate_path}}
+  {% for p in (1..paginator.total_pages) %}
+    {% if p == paginator.page %}
+      <em class = "current-page">{{ p }}</em>
+    {% elsif p == 1 %}
+      <a href="{{paginator.first_page_path}}">{{ p }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{ paginator.paginate_path | replace: ':num', p | relative_url }}">{{ p }}</a>
     {% endif %}
   {% endfor %}
 

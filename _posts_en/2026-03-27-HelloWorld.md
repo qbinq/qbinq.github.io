@@ -2,6 +2,7 @@
 title: "Hello world"
 layout: post
 categories: Blog
+translation_key: helloworld
 lang: en
 ---
 This is the first true post.

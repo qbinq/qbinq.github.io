@@ -5,7 +5,7 @@ gem "jekyll"
 
 gem "jekyll-toc"
 
-gem "jekyll-paginate"
+gem "jekyll-paginate-v2"
 
 gem "kramdown-math-katex"
 

@@ -4,19 +4,37 @@ kramdown:
   math_engine: katex
 
 # permalink: pretty
-paginate: 3
 toc:
   sublist_class: sub-list
-paginate_path: "/page:num"
 collections:
   posts_en:
     output: true
     permalink: /en/:categories/:title
+
 permalink: /:categories/:title
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page:num/"
+  title: ":title - page :num"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+  
 plugins:
   - jekyll-toc
-  - jekyll-paginate
-# collections: 
-#   my_collection:
-#     output: true
-#     permalink: /:categories/:output_ext
+  - jekyll-paginate-v2
+
+defaults:
+  - scope:
+      path: ""
+      type: posts_en
+    values:
+      lang: en
+
+  - scope:
+      path: ""
+      type: posts
+    values:
+      lang: es

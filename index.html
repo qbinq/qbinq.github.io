@@ -2,11 +2,16 @@
 layout: default
 nav: home
 lang: es
+<!-- permalink: / -->
+pagination:
+  enabled: true
+  collection: posts
+  indexpage: "index.html"
 ---
 {% for post in paginator.posts %}
 <article class="post">
     <a href="{{post.url}}">
-    <h2 class="post-title">{{post.title}} </h2>
+    <h2 class="post-title">{{post.title}}</h2>
     
     <svg class = "circle-selector" width="511" height="92" viewBox="0 0 511 92" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -48,13 +53,14 @@ lang: es
     </svg>
   {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em class = "current-page">{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ site.paginate_path | relative_url | replace: 'page:num/', '' }}">{{ page }}</a>
+  {{paginator.paginate_path}}
+  {% for p in (1..paginator.total_pages) %}
+    {% if p == paginator.page %}
+      <em class = "current-page">{{ p }}</em>
+    {% elsif p == 1 %}
+      <a href="{{paginator.first_page_path}}">{{ p }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{site.data.translations[page.lang].nav.home.url}}page{{p}}/">{{ p }}</a>
     {% endif %}
   {% endfor %}
 

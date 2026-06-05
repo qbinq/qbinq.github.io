@@ -176,6 +176,14 @@ body {
     font-weight: 400;
 }
 
+.translation-icon{
+    /* padding: 0.5rem; */
+    /* height: 1.2rem; */
+    transform: translateY(0.2rem);
+    display:inline-block;
+    padding-left: 1rem
+}
+
 .post-content{
     font-size: 1.1rem;
     line-height: 1.5;
@@ -340,6 +348,11 @@ body {
     text-align: left;
     
 }
+
+.footer-left-column a{
+    color: inherit;
+}
+
 
 .footer-right-column{
     text-align: right;
