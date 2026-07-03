@@ -7,11 +7,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel= "stylesheet" href = "/style.css">
-    <title> {{page.title}} </title>
     <meta charset="UTF-8">
-    <meta name = "description" content = "Personal website and portafolio">
+    <meta name = "description" content = "Personal website about science, software and things.">
     <meta name = "author" content = "kevin.andrestrepo@gmail.com">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel="alternate"
+        hreflang="es"
+        href="{{ site.url }}{{ site.data.translations.es.nav[page.nav].url }}">
+
+    <link rel="alternate"
+        hreflang="en"
+        href="{{site.url}}{{ site.data.translations.en.nav[page.nav].url}}">
+
+    <link rel="alternate"
+        hreflang="x-default"
+        href="{{ site.url }}{{ site.data.translations.en.nav[page.nav].url}}">
+    {% seo %}
     </head>
 
     <body>

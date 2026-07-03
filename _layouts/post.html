@@ -6,7 +6,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/post.css">
-        <title> {{page.title}} </title>
+        {% assign espost = site.posts | where: "translation_key", page.translation_key | first %}
+        {% assign enpost = site.posts_en | where: "translation_key", page.translation_key | first %}
+
+        <link rel="alternate"
+            hreflang="es"
+            href="{{ site.url }}{{espost.url}}">
+
+        <link rel="alternate"
+            hreflang="en"
+            href="{{site.url}}{{enpost.url}}">
+
+        <link rel="alternate"
+            hreflang="x-default"
+            href="{{ site.url }}{{enpost.url}}">
+
         <meta charset="UTF-8">
         <meta name = "description" content = "{{page.excerpt | strip_html}}">
         <meta name = "author" content = "kevin.andrestrepo@gmail.com">
@@ -24,6 +38,7 @@
             });
         </script> -->
 
+        {% seo %}
         <script src = "/scripts/imageSlider.js"></script>
     </head>
 <body>
@@ -75,9 +90,9 @@
             <h6 class="post-meta">
                 {{page.date | date: "%d %b, %Y" }} &middot {{page.categories}}
                 {%if page.lang == "en"%}
-                {% assign translated = site.posts | where: "translation_key", page.translation_key | first %}
+                {% assign translated = espost %}
                 {%else%}
-                {% assign translated = site.posts_en | where: "translation_key", page.translation_key | first %}
+                {% assign translated = enpost %}
                 {%endif%}
                 <a href="{{translated.url}}">
                 <img src = "{{site.data.translations[page.lang].icon_url}}" class="translation-icon">

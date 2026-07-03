@@ -11,3 +11,6 @@ gem "kramdown-math-katex"
 
 group :jekyll_plugins do
 end
+gem "jekyll-seo-tag", "~> 2.9"
+
+gem "jekyll-sitemap", "~> 1.4"

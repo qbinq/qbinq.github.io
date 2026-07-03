@@ -1,4 +1,7 @@
-title: My Site
+title: Qbin
+description: Personal website about science, software and things.
+url: "https://qbinq.github.io"
+baseurl: ""
 markdown: kramdown
 kramdown: 
   math_engine: katex
@@ -25,6 +28,8 @@ pagination:
 plugins:
   - jekyll-toc
   - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:
